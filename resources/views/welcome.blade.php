@@ -1,4 +1,5 @@
-@extends('layouts.app2') @section('content')
+@extends('layouts.app') 
+@section('content')
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -13,28 +14,67 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img
-                src="{{url('storage/img/img1.jpg')}}"
+                src="{{url('storage/img/fondo1.jpg')}}"
                 style="height:500px"
                 class="d-block w-100"
                 alt="..."
             />
+            <div class="carousel-caption d-none d-md-block">
+        <h3>Imaginacón</h3>
+        <p>Todo es Posible</p>
+      </div>
         </div>
         <div class="carousel-item">
             <img
-                src="{{url('storage/img/img2.jpg')}}"
+                src="{{url('storage/img/fondo2.jpg')}}"
                 style="height:500px"
                 class="d-block w-100"
                 alt="..."
             />
+            <div class="carousel-caption d-none d-md-block">
+        <h3>Imaginacón</h3>
+        <p>Todo es Posible</p>
+      </div>
         </div>
         <div class="carousel-item">
             <img
-                src="{{url('storage/img/img3.jpg')}}"
+                src="{{url('storage/img/fondo3.jpg')}}"
                 style="height:500px"
                 class="d-block w-100"
                 alt="..."
             />
+            <div class="carousel-caption d-none d-md-block">
+        <h3>Imaginacón</h3>
+        <p>Todo es Posible</p>
+      </div>
         </div>
+    <style>
+        .overlay{
+    background-color: rgb(1,1,1,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+        }
+.overlay .caja{
+    height: 50vh;
+}
+        </style>
+        <div class="overlay">
+                            <div class="container-fluid ">
+                                <div class="row caja align-items-center">
+                                    <div class="col col-sm-12 text-sm-center col-md-5 offset-md-6 text-center text-md-right">
+                                        <h1 class="text-light">La Vida del Código</h1>
+                                        <p class="d-none d-sm-block text-light">
+                                            Codigo Conf llega por pimera vez a Hawaii! Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del Team Codigo, a otros estudiantes de Codigo y a los oradores de primer nivel que tenemos para ti. Te esperamos!
+                                        </p>
+                                        <a type="button" class="btn btn-outline-light mr-2" href="{{ route('login') }}">{{ __('Iniciar sesión') }}</a>
+                                        <a type="button" class="btn btn-success mr-4 position-relative" href="{{ route('register') }}">{{ __('Registrarse') }}</a>                             
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
     </div>
     <a
         class="carousel-control-prev"
@@ -45,7 +85,7 @@
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a
+    <!-- <a
         class="carousel-control-next"
         href="#carouselExampleIndicators"
         role="button"
@@ -53,10 +93,10 @@
     >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-    </a>
+    </a> -->
 </div>
 
-<div class="container mt-2">
+<div class="container">
     <div class="row">
         <div class="col text-center">
         <h1>Perfil <small class="text-muted">Profesional</small></h1>
@@ -78,13 +118,16 @@
                                 <div class="col-6 text-left">
                                     <h5 class="card-title">Esperiencia :</h5><hr>
                                     <p class="card-text">
-                                    <i class="far fa-address-book"></i> 5 años como Tutor Vitual (herramientas (Moodle y Chamilo))
+                                    <i class="fa fa-address-book-o" aria-hidden="true"></i>
+ 5 años como Tutor Vitual (herramientas (Moodle y Chamilo))
                                     </p>
                                     <p class="card-text">
-                                    <i class="far fa-address-book"></i> 1 año en soporte y administración de redes 
+                                    <i class="fa fa-address-book-o" aria-hidden="true"></i>
+ 1 año en soporte y administración de redes 
                                     </p>
                                     <p class="card-text">
-                                    <i class="far fa-address-book"></i> 2 años en soporte de equipos informáticos
+                                    <i class="fa fa-address-book-o" aria-hidden="true"></i>
+ 2 años en soporte de equipos informáticos
                                     </p>
                                 </div>
                             </div>
